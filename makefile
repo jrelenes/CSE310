@@ -1,10 +1,12 @@
 
-storm: storm.cpp defn.h
-	g++ -std=c++11 storm.cpp -o storm
+seaice: seaice.cpp seaice.h
+	g++ -std=c++11 -pthread seaice.cpp -o seaice
 
 
 
 
 clean:
-	$(RM) storm
+	$(RM) seaice.cpp
+	$(RM) seaice.h
+	$(RM) seaice
 	
