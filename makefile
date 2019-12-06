@@ -1,11 +1,10 @@
 
-encode: encode.cpp
-	g++ -std=c++11 encode.cpp -o encode   
+storm: storm.cpp defn.h
+	g++ -std=c++11 storm.cpp -o storm
 
-decode: decode.cpp
-	g++ -std=c++11 decode.cpp -o decode 
+
 
 
 clean:
-	$(RM) encode
-	$(RM) decode
+	$(RM) storm
+	
